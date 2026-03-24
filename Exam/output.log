@@ -1,0 +1,1526 @@
+Creating build directory...
+Entering build directory...
+Running CMake...
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found OpenMP_C: -fopenmp (found version "4.5") 
+-- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+-- Found OpenMP: TRUE (found version "4.5")  
+-- Configuring done (12.9s)
+-- Generating done (0.2s)
+-- Build files have been written to: /mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build
+Building project...
+[ 10%] Building CXX object CMakeFiles/multiwaycut.dir/benchmark/benchmark.cpp.o
+[ 20%] Building CXX object CMakeFiles/multiwaycut.dir/benchmark/test.cpp.o
+[ 30%] Building CXX object CMakeFiles/multiwaycut.dir/algorithms/maximum_flow.cpp.o
+[ 40%] Building CXX object CMakeFiles/multiwaycut.dir/data_structure/graph.cpp.o
+[ 50%] Building CXX object CMakeFiles/multiwaycut.dir/utils/file_handler.cpp.o
+[ 60%] Building CXX object CMakeFiles/multiwaycut.dir/algorithms/heuristic.cpp.o
+[ 70%] Building CXX object CMakeFiles/multiwaycut.dir/algorithms/parallel_heuristic.cpp.o
+[ 80%] Building CXX object CMakeFiles/multiwaycut.dir/algorithms/approximation.cpp.o
+[ 90%] Building CXX object CMakeFiles/multiwaycut.dir/algorithms/exact.cpp.o
+[100%] Linking CXX executable multiwaycut
+[100%] Built target multiwaycut
+Running executable...
+Benchmarking Track1 instance instance001.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance002.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance003.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance004.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance005.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+========================================================
+Benchmarking Track1 instance instance006.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 138 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 138 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 138 has its two ends in two different terminal sets.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance007.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance008.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance009.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance010.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance011.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance012.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance013.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 32 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 32 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 32 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track1 instance instance014.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance015.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance016.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Invalid cut: terminals 2 and 5 are still connected.
+Path: 2 143 66 5 
+--------------------------------------------------
+Running Exact...
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance017.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance018.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance019.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track1 instance instance020.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 90 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 90 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 90 has its two ends in two different terminal sets.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance021.gr
+--------------------------------------------------
+Running Heuristic...
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 36 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 36 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track1 instance instance022.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 40 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 40 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 40 has its two ends in two different terminal sets.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance023.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track1 instance instance024.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance025.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track1 instance instance026.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance027.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 168 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 168 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 168 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track1 instance instance028.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance029.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance030.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance031.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance032.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance033.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 408 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 408 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 408 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track1 instance instance034.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance035.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance036.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance037.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance038.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance039.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 110 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 110 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 110 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track1 instance instance040.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance041.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 116 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 116 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 116 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track1 instance instance042.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance043.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance044.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance045.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance046.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance047.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance048.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance049.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance050.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance051.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+========================================================
+Benchmarking Track1 instance instance052.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 43188 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 43188 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 43188 has its two ends in two different terminal sets.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance053.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance054.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance055.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 490 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 490 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 490 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track1 instance instance056.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 58 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 58 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 58 has its two ends in two different terminal sets.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance057.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance058.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 226 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 226 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 226 has its two ends in two different terminal sets.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance059.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 454 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 454 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 454 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track1 instance instance060.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance061.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 194 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 194 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 194 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track1 instance instance062.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance063.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance064.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance065.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance066.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance067.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance068.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Running Approximation
+inal pairs are separated.
+--------------------------------------------------
+Invalid cut: terminals 74 and 75 are still connected.
+Path: 74 8 13 75 
+--------------------------------------------------
+Running Exact...
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance069.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance070.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance071.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 4 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 4 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 4 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track1 instance instance072.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance073.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 296 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 296 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 296 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track1 instance instance074.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 274 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 274 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 274 has its two ends in two different terminal sets.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance075.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance076.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance077.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance078.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance079.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 86 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 86 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 86 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track1 instance instance080.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance081.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance082.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance083.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance084.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance085.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance086.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance087.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance088.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance089.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 286 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 286 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 286 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track1 instance instance090.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance091.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance092.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Invalid cut: terminals 118 and 119 are still connected.
+Path: 118 20 26 119 
+--------------------------------------------------
+Running Exact...
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance093.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 26 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 26 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 26 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track1 instance instance094.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance095.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance096.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 118 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 118 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 118 has its two ends in two different terminal sets.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance097.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 1464 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 1464 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 1464 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track1 instance instance098.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance099.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance100.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance101.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance102.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance103.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 748 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 748 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 748 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track1 instance instance104.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance105.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 2080 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 2080 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 2080 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track1 instance instance106.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Approximation
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance107.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance108.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/mnt/c/Users/Jyotsna Bellary/UniKonstanz/Year_2/Sem 3/Algorithm Engineering/jyotsna.bellary/Exam/build/../output_data/track1_results.csv"
+Benchmarking Track1 instance instance109.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation
+Failed to compute LP solution within time limit.
+--------------------------------------------------
+Running Exact...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track1 instance instance110.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Approximation

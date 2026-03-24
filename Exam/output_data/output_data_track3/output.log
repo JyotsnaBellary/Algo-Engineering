@@ -1,0 +1,1345 @@
+nohup: ignoring input
+Creating build directory...
+Entering build directory...
+Running CMake...
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found OpenMP_C: -fopenmp (found version "4.5") 
+-- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+-- Found OpenMP: TRUE (found version "4.5")  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/bellary/algo_eng/Exam2/build
+Building project...
+Scanning dependencies of target multiwaycut
+[ 10%] Building CXX object CMakeFiles/multiwaycut.dir/benchmark/benchmark.cpp.o
+[ 20%] Building CXX object CMakeFiles/multiwaycut.dir/benchmark/test.cpp.o
+[ 30%] Building CXX object CMakeFiles/multiwaycut.dir/algorithms/maximum_flow.cpp.o
+[ 40%] Building CXX object CMakeFiles/multiwaycut.dir/data_structure/graph.cpp.o
+[ 50%] Building CXX object CMakeFiles/multiwaycut.dir/utils/file_handler.cpp.o
+[ 60%] Building CXX object CMakeFiles/multiwaycut.dir/algorithms/heuristic.cpp.o
+[ 70%] Building CXX object CMakeFiles/multiwaycut.dir/algorithms/parallel_heuristic.cpp.o
+[ 80%] Building CXX object CMakeFiles/multiwaycut.dir/algorithms/approximation.cpp.o
+[ 90%] Building CXX object CMakeFiles/multiwaycut.dir/algorithms/exact.cpp.o
+[100%] Linking CXX executable multiwaycut
+[100%] Built target multiwaycut
+Running executable...
+Benchmarking Track3 instance instance001.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 802 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 802 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance002.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance003.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance004.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance005.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance006.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance007.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance008.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance009.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance010.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/home/bellary/algo_eng/Exam2/build/../output_data/track3_results.csv"
+Benchmarking Track3 instance instance011.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance012.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance013.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance014.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance015.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance016.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance017.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 9866 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 9866 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance018.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance019.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance020.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/home/bellary/algo_eng/Exam2/build/../output_data/track3_results.csv"
+Benchmarking Track3 instance instance021.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance022.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance023.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance024.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance025.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 86 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 86 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance026.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 86 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 86 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance027.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance028.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance029.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance030.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/home/bellary/algo_eng/Exam2/build/../output_data/track3_results.csv"
+Benchmarking Track3 instance instance031.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance032.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance033.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance034.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance035.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance036.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 76 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 76 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance037.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance038.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance039.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance040.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Writing CSV to: "/home/bellary/algo_eng/Exam2/build/../output_data/track3_results.csv"
+Benchmarking Track3 instance instance041.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance042.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance043.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance044.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance045.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance046.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance047.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance048.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance049.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance050.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/home/bellary/algo_eng/Exam2/build/../output_data/track3_results.csv"
+Benchmarking Track3 instance instance051.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance052.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance053.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance054.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance055.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance056.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance057.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance059.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance060.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance061.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/home/bellary/algo_eng/Exam2/build/../output_data/track3_results.csv"
+Benchmarking Track3 instance instance062.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance063.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 45424 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 45424 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance064.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance065.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance066.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance067.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance068.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 312 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 312 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance069.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 312 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 312 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance070.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 312 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 312 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance071.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Writing CSV to: "/home/bellary/algo_eng/Exam2/build/../output_data/track3_results.csv"
+Benchmarking Track3 instance instance072.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance073.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance074.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance075.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance076.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance077.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance078.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 0 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance079.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance080.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 24 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 24 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance081.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/home/bellary/algo_eng/Exam2/build/../output_data/track3_results.csv"
+Benchmarking Track3 instance instance082.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance083.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance084.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance085.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance086.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance087.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 36160 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 36160 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance088.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 77748 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 77748 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance089.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 20996 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 20996 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance090.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 320 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 320 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance091.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 320 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 320 has its two ends in two different terminal sets.
+========================================================
+Writing CSV to: "/home/bellary/algo_eng/Exam2/build/../output_data/track3_results.csv"
+Benchmarking Track3 instance instance092.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 112 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 112 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance093.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 112 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 112 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance094.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance095.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance096.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance097.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance098.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance099.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance100.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance101.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/home/bellary/algo_eng/Exam2/build/../output_data/track3_results.csv"
+Benchmarking Track3 instance instance102.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance103.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance104.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance105.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance106.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance107.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance108.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance109.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance110.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance111.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/home/bellary/algo_eng/Exam2/build/../output_data/track3_results.csv"
+Benchmarking Track3 instance instance112.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance113.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance114.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance115.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance116.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 1544 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 1544 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance117.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance118.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance119.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance120.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance121.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/home/bellary/algo_eng/Exam2/build/../output_data/track3_results.csv"
+Benchmarking Track3 instance instance122.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance123.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance124.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance125.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance126.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance127.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance128.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance129.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance130.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance131.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/home/bellary/algo_eng/Exam2/build/../output_data/track3_results.csv"
+Benchmarking Track3 instance instance132.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance133.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance134.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 116464 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 116464 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance135.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance136.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance137.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance138.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance139.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance140.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance141.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/home/bellary/algo_eng/Exam2/build/../output_data/track3_results.csv"
+Benchmarking Track3 instance instance142.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance143.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 20 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 20 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance144.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 22 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 22 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance145.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 12 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 12 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance146.gr
+--------------------------------------------------
+Running Heuristic...
+Edge 10 has its two ends in two different terminal sets.
+--------------------------------------------------
+Running Parallel Heuristic...
+Edge 10 has its two ends in two different terminal sets.
+========================================================
+Benchmarking Track3 instance instance147.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance148.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance149.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance150.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance151.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Writing CSV to: "/home/bellary/algo_eng/Exam2/build/../output_data/track3_results.csv"
+Benchmarking Track3 instance instance152.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance153.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance154.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance155.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance156.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance157.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance158.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance159.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance160.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance161.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Failed to open CSV file: ../output_data/track3_results.csv
+Benchmarking Track3 instance instance162.gr
+--------------------------------------------------
+Running Heuristic...
+Cut is valid: all terminal pairs are separated.
+--------------------------------------------------
+Running Parallel Heuristic...
+Cut is valid: all terminal pairs are separated.
+========================================================
+Benchmarking Track3 instance instance163.gr
+--------------------------------------------------
+Running Heuristic...
