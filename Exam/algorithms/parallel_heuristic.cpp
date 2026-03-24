@@ -55,20 +55,6 @@ void ParallelHeuristic::initialize_sink()
     }
 }
 
-// void ParallelHeuristic::reset_sink(int terminal_index)
-// {
-//     // reactivate previous
-//     if (prev_index != -1)
-//     {
-//         graph.get_edge_ref(terminalToSinkEdges[prev_index]).active = true;
-//     }
-
-//     // deactivate current
-//     graph.get_edge_ref(terminalToSinkEdges[terminal_index]).active = false;
-
-//     prev_index = terminal_index;
-// }
-
 optional<vector<NodeId>> ParallelHeuristic::merge_node_cut_parallel(const vector<vector<EdgeId>> &isolatingCuts, const vector<pair<int, int>> &cutSizes)
 {
 
@@ -127,14 +113,12 @@ vector<EdgeId> ParallelHeuristic::compute_isolating_cut(NodeId terminal, EdgeId 
     MaxFlowResult result = MaxFlow::edmondsKarp(graph, terminal, sink, std::nullopt,
         blocked_sink_edge);
 
-         // cout << "computed edmonds karp" << endl;
     vector<EdgeId> cut = MaxFlow::getMinCutEdges(
         graph,
         result.residualEdges,
         result.residualAdj,
         terminal);
 
-         // cout << "cut computed" << endl;
     // optional: remove sink edges from the returned cut
     vector<EdgeId> filteredCut;
     for (EdgeId eid : cut)
@@ -148,7 +132,6 @@ vector<EdgeId> ParallelHeuristic::compute_isolating_cut(NodeId terminal, EdgeId 
 
         filteredCut.push_back(eid);
     }
- // cout << "filtered cut computed" << endl;
     return filteredCut;
 }
 
@@ -176,10 +159,7 @@ optional<vector<NodeId>> ParallelHeuristic::run(int time_limit_ms)
 
     isolatingCuts.assign(terminals.size(), {});
     std::vector<std::pair<int, int>> cutSizes(terminals.size());
-// {cut_size, terminal_index}
 
-     // cout << "Initialized sink" << endl;
-    // for  each terminal
     #pragma omp parallel for schedule(dynamic)
         for (int i = 0; i < (int)terminals.size(); i++)
         {
@@ -193,50 +173,21 @@ optional<vector<NodeId>> ParallelHeuristic::run(int time_limit_ms)
                 continue;
             }
 
-        //     if (time_limit_reached()) {
-        //     if (prev_index != -1) {
-        //         graph.get_edge_ref(terminalToSinkEdges[prev_index]).active = true;
-        //     }
-        //     return nullopt;
-        // }
-             // cout << "Processing terminal " << terminals[i] << endl;
+        
             vector<EdgeId> cut = compute_isolating_cut(terminals[i], terminalToSinkEdges[i]);
-            //print cut 
-             // cout << "Isolating cut for terminal " << terminals[i] << ": ";
-            // for (EdgeId eid : cut) {
-                 // cout << eid << " ";            }
-             // cout << endl;
-        //     if (time_limit_reached()) {
-        //     if (prev_index != -1) {
-        //         graph.get_edge_ref(terminalToSinkEdges[prev_index]).active = true;
-        //     }
-        //     return nullopt;
-        // }
+           
         if (time_limit_reached()) {
         stop = true;
         continue;
     }
 
             isolatingCuts[i] = std::move(cut);
-             // cout << "Error here" << endl;
             cutSizes[i] = { (int)isolatingCuts[i].size(), i };
-             // cout << "Cut size for terminal " << terminals[i] << ": " << cutSizes[i].first << endl;
         }
 
-    // if (prev_index != -1)
-    // {
-    //     graph.get_edge_ref(terminalToSinkEdges[prev_index]).active = true;
-    // }
-
-     // cout << "sorting now" << endl;
+    
     sort(cutSizes.begin(), cutSizes.end());
 
-    //  // cout << "Isolating cut sizes:\n";
-    // for (size_t i = 0; i < cutSizes.size(); i++)
-    // {
-    // int idx = cutSizes[i].second;
-    //  // cout << "Terminal " << terminals[idx] << ": cut size = " << cutSizes[i].first << "\n";
-    // }
     if (stop) {
     timed_out = true;
     return nullopt;

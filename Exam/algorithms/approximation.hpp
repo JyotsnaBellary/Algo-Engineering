@@ -46,11 +46,6 @@ public:
 
     optional<DualLPSolution> calculate_optimal_solution(DualLPSolution& sol, int time_limit_ms);
 
-    // void calculate_region(int terminal_index, const DualLPSolution& lp_solution, vector<bool>& in_region);
-
-    // void calculate_boundary(const vector<NodeId>& region, vector<NodeId>& boundary);
-
-    // void calculate_half_boundary(NodeId terminal, const DualLPSolution& lp_solution, vector<NodeId>& half_boundary);
     bool did_timeout() const { return timed_out; }
     optional<vector<NodeId>> run(int time_limit_ms = 12000);
 };

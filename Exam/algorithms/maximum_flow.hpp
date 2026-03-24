@@ -14,10 +14,6 @@ struct MaxFlowResult {
 
 class MaxFlow {
     private:
-        // BFs?
-        // int maxFlow;
-        // std::vector<Edge> residualEdges;
-        // std::vector<std::vector<EdgeId>> residualAdj;
     
     static void buildResidualNetwork(const Graph& graph,
                                      vector<ResidualEdge>& residualEdges,

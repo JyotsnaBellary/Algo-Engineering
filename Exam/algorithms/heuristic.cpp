@@ -40,7 +40,6 @@ void Heuristic::initialize_sink()
     for (int i = 0; i < terminals.size(); i++)
     {
         Edge edge;
-        // edge.id = -1; // graph will assign id
         edge.src = terminals[i];
         edge.trg = sink;
         edge.capacity = INF;
@@ -154,7 +153,7 @@ optional<vector<NodeId>> Heuristic::run(int time_limit_ms)
             return nullopt;
         }
     }
-    // cout << "Running heuristic with time limit: " << time_limit_ms << " ms" << endl;
+
     timed_out = false;
     deadline = Clock::now() + chrono::milliseconds(time_limit_ms);
 
@@ -203,12 +202,6 @@ optional<vector<NodeId>> Heuristic::run(int time_limit_ms)
 
     sort(cutSizes.begin(), cutSizes.end());
 
-    // cout << "Isolating cut sizes:\n";
-    // for (size_t i = 0; i < cutSizes.size(); i++)
-    // {
-    // int idx = cutSizes[i].second;
-    // cout << "Terminal " << terminals[idx] << ": cut size = " << cutSizes[i].first << "\n";
-    // }
     return merge_into_node_cut(isolatingCuts, cutSizes);
     // take union of the smallest k-1 cuts
 }

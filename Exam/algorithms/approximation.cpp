@@ -12,18 +12,11 @@ Approximation::Approximation(Graph graph, const vector<NodeId> &terminals)
       in_region(terminals.size(), vector<bool>(graph.number_of_nodes(), false)),
       region_nodes(terminals.size(), vector<NodeId>()),
       node_state(graph.number_of_nodes(), OUTSIDE)
-{}
+{
+}
 
 optional<DualLPSolution> Approximation::calculate_optimal_solution(DualLPSolution &sol, int time_limit_ms)
 {
-    // cout << "calculaing optimal solutio for dual LP" << endl;
-    // cout << "terminals are: ";
-    // for (NodeId t : terminals)
-    // {
-    //     cout << t << " ";
-    // }
-    // cout << endl;
-
     int num_nodes = graph.number_of_nodes();
     long long m = graph.number_of_edges();
     int num_terminals = terminals.size();
@@ -49,7 +42,6 @@ optional<DualLPSolution> Approximation::calculate_optimal_solution(DualLPSolutio
         d_col[v] = col;
 
         glp_set_col_bnds(lp, col, GLP_LO, 0.0, 0.0); // d_v >= 0
-        // glp_set_col_bnds(lp, col, GLP_DB, 0.0, 1.0); // 0 ≤ d_v ≤ 1
         glp_set_obj_coef(lp, col, graph.get_node(v).weight);
     }
 
@@ -68,19 +60,19 @@ optional<DualLPSolution> Approximation::calculate_optimal_solution(DualLPSolutio
         }
     }
 
-    // int row_count = graph.number_of_edges() * k + k + k * (k - 1);
-long long row_count_ll = m * k + k + 1LL * k * (k - 1);
-long long col_count_ll = (n - (long long)terminals.size()) + 1LL * n * k;
+    long long row_count_ll = m * k + k + 1LL * k * (k - 1);
+    long long col_count_ll = (n - (long long)terminals.size()) + 1LL * n * k;
 
-// rough estimate: each edge/terminal row contributes about 2-3 coefficients
-long long nnz_est_ll = 3LL * m * k + k + 1LL * k * (k - 1);
+    // rough estimate: each edge/terminal row contributes about 2-3 coefficients
+    long long nnz_est_ll = 3LL * m * k + k + 1LL * k * (k - 1);
 
-if (row_count_ll > 10000000LL || col_count_ll > 5000000LL || nnz_est_ll > 30000000LL) {
-    timed_out = true;   // or set a separate skipped flag if you want
-    return nullopt;
-}
+    if (row_count_ll > 10000000LL || col_count_ll > 5000000LL || nnz_est_ll > 30000000LL)
+    {
+        timed_out = true; // or set a separate skipped flag if you want
+        return nullopt;
+    }
 
-int row_count = static_cast<int>(row_count_ll);
+    int row_count = static_cast<int>(row_count_ll);
     glp_add_rows(lp, row_count);
 
     vector<int> ia(1), ja(1);
@@ -149,11 +141,11 @@ int row_count = static_cast<int>(row_count_ll);
 
     glp_load_matrix(lp, ia.size() - 1, ia.data(), ja.data(), ar.data());
     int ret = glp_simplex(lp, &params);
-    if(ret == GLP_ETMLIM) {
-        // cout << "LP solver reached time limit." << endl;
+    if (ret == GLP_ETMLIM)
+    {
         timed_out = true;
-        return nullopt; //return empty solution 
-    } 
+        return nullopt; // return empty solution
+    }
     // DualLPSolution sol;
     sol.d.assign(n, 0.0);
     sol.y.assign(n, vector<double>(k, 0.0));
@@ -166,13 +158,10 @@ int row_count = static_cast<int>(row_count_ll);
         if (!graph.get_node(v).terminal)
         {
             sol.d[v] = glp_get_col_prim(lp, d_col[v]);
-            // cout << "d[" << v << "] = " << sol.d[v] << endl;
         }
     }
 
     const double EPS = 1e-6;
-    // y values
-    // vector<NodeId> with_one;
     for (NodeId u = 0; u < n; u++)
     {
         for (int j = 0; j < k; j++)
@@ -224,7 +213,6 @@ optional<vector<NodeId>> Approximation::run(int time_limit_ms)
         return nullopt;
     }
 
-    
     in_boundary.assign(num_terminals, vector<bool>(num_nodes, false));
     boundary_count.assign(num_nodes, 0);
     first_owner.assign(num_nodes, -1);
@@ -238,16 +226,16 @@ optional<vector<NodeId>> Approximation::run(int time_limit_ms)
 
         vector<NodeId> regional_nodes = region_nodes[t];
         regional_nodes.push_back(terminal); // add terminal itself to its region
-        
+
         for (NodeId region_node : regional_nodes)
         {
-            
+
             vector<NodeId> neighbors = graph.get_neighboring_nodes(region_node);
-            
+
             for (int i = 0; i < neighbors.size(); i++)
             {
                 NodeId neighbor = neighbors[i];
-                if (graph.get_node(neighbor).terminal  || node_state[neighbor] == IN_REGION)
+                if (graph.get_node(neighbor).terminal || node_state[neighbor] == IN_REGION)
                     continue;
                 else if (lp_solution.has_value() && lp_solution.value().d[neighbor] == 0.5 || node_state[neighbor] == OUTSIDE)
                 {
@@ -270,7 +258,7 @@ optional<vector<NodeId>> Approximation::run(int time_limit_ms)
             }
         }
     }
-    
+
     // identify highest weight half boundary nodes set
     int heaviest_half_boundary = -1;
     int max_half_boundary_weight = -1;
@@ -283,7 +271,7 @@ optional<vector<NodeId>> Approximation::run(int time_limit_ms)
             heaviest_half_boundary = i;
         }
     }
-    
+
     // compute  Output ⋃ Γ(Si) − Γ1/2(Sj)
     set<NodeId> cutSet;
     for (NodeId v = 0; v < num_nodes; v++)
@@ -302,5 +290,4 @@ optional<vector<NodeId>> Approximation::run(int time_limit_ms)
 
     // return union of all boundary nodes except the highest weighing halfboundary set.
     return vector<NodeId>(cutSet.begin(), cutSet.end());
-
 }

@@ -29,7 +29,6 @@ public:
 
     vector<EdgeId> compute_isolating_cut(NodeId terminal);
     vector<NodeId> merge_into_node_cut(const vector<vector<EdgeId>>& cuts, const vector<pair<int,int>>& cutSizes);
-    // vector<NodeId> merge_node_cut_parallel(const vector<vector<EdgeId>>& cuts, const vector<pair<int,int>>& cutSizes);
     // optionally set parallel to true
     optional<vector<NodeId>> run(int time_limit_ms = 120000);
     bool did_timeout() const { return timed_out; }

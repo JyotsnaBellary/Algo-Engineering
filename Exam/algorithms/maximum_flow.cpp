@@ -97,7 +97,6 @@ bool MaxFlow::bfs(const vector<ResidualEdge>& edges,
 }
 
 MaxFlowResult MaxFlow::edmondsKarp(const Graph& graph, NodeId source, NodeId sink, optional<int> limit, optional<EdgeId> blocked_edge_id) {
-    // cout << "Running from  " << source << " " << sink << endl;
 
     MaxFlowResult result;
 
@@ -109,9 +108,6 @@ MaxFlowResult MaxFlow::edmondsKarp(const Graph& graph, NodeId source, NodeId sin
     // Keep finding augmenting paths while they exist
     while (bfs(result.residualEdges, result.residualAdj, source, sink, parentEdge)) {
 
-        
-
-        // cout << "Found Augmenting path" << endl;
         // Step 1: find bottleneck capacity on the path
         int pathFlow = INT_MAX;
         NodeId current = sink;
@@ -122,10 +118,7 @@ MaxFlowResult MaxFlow::edmondsKarp(const Graph& graph, NodeId source, NodeId sin
 
             pathFlow = min(pathFlow, edge.residual_capacity);
 
-            // cout << "Edge " << edge.src << " -> " << edge.trg
-            //      << " (residual capacity = " << edge.residual_capacity << ")\n";
             current = edge.src;
-
         }
 
         // Step 2: update residual capacities along the path
@@ -148,11 +141,9 @@ MaxFlowResult MaxFlow::edmondsKarp(const Graph& graph, NodeId source, NodeId sin
         maxFlow += pathFlow;
 
         if (limit.has_value() && maxFlow > limit.value()) {
-            // cout << "Flow limit of " << limit.value() << " exceeds k. Stopping Edmonds-Karp." << endl;
             break;
         }
     }
-    // cout << "No more augmenting paths" << endl;
     result.maxFlow = maxFlow;
     return result;
 }

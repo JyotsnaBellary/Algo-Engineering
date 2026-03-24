@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(OpenMP REQUIRED)
 
 add_executable(multiwaycut
-    benchmark/benchmark.cpp
+    # benchmark/benchmark.cpp
     benchmark/test.cpp
     algorithms/maximum_flow.cpp
     data_structure/graph.cpp
@@ -18,6 +18,7 @@ add_executable(multiwaycut
     algorithms/approximation.cpp
     algorithms/exact.cpp
     benchmark/benchmark.cpp
+    main.cpp
 )
 
 target_include_directories(multiwaycut PRIVATE

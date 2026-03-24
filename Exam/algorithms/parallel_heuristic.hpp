@@ -25,11 +25,9 @@ public:
     void initialize_sink();
     bool time_limit_reached();
 
-    // void reset_sink(int terminal);
 
     vector<EdgeId> compute_isolating_cut(NodeId terminal, EdgeId blocked_sink_edge);
     optional<vector<NodeId>> merge_node_cut_parallel(const vector<vector<EdgeId>>& cuts, const vector<pair<int,int>>& cutSizes);
     bool did_timeout() const { return timed_out; }
-    // optionally set parallel to true
     optional<vector<NodeId>> run(int time_limit_ms);
 };

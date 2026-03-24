@@ -118,21 +118,6 @@ NodeId Exact::get_node_with_terminal_neighbor(const int terminal_group, const St
 
 optional<vector<NodeId>> Exact::nmc(const State &state, int k)
 {
-    // cout << "Entering nmc with k = " << k << " and " << state.groups.size() << " terminal groups." << endl;
-    // cout << "terminal group[0]: " << endl;
-    // for (NodeId t : state.groups[0]) {
-    //     cout << t << " ";
-    // }
-    // cout << endl;
-
-    // // print deleted nodes 
-    // cout << "Deleted nodes: ";
-    // for (NodeId v = 0; v < graph.number_of_nodes(); v++) {
-    //     if (state.deleted[v]) {
-    //         cout << v << " ";
-    //     }    }
-    // cout << endl;
-
     if (time_limit_reached()) {
         return nullopt;
     }
@@ -220,19 +205,16 @@ optional<vector<NodeId>> Exact::nmc(const State &state, int k)
 
     // 4. if m1 > k then return “No”;
     if (m1 > k) {
-        // cout << "Minimum cut size " << m1 << " exceeds k = " << k << ". Returning No." << endl;
         return nullopt;
     }
 
     // 5. if (m1 = 0 and l = 2) then return ∅;
     if (m1 == 0 && state.groups.size() == 2) {
-        // cout << "Minimum cut size is 0 and there are only 2 terminal groups. Returning empty set." << endl;
         return vector<NodeId>{};
     }
 
     // 5.1 if (m1 = 0 and l > 2) then return NMC(G, {T2, . . . , T l }, k) ;
     if (m1 == 0 && state.groups.size() > 2) {
-        // cout << "Minimum cut size is 0 and there are more than 2 terminal groups. Recursing on remaining terminal groups." << endl;
         State next_state = state;
         next_state.groups.erase(next_state.groups.begin());
         return nmc(next_state, k);
@@ -254,7 +236,6 @@ optional<vector<NodeId>> Exact::nmc(const State &state, int k)
         int new_m1 = get_minimum_cut_size(merged_state, m1);
 
         if (new_m1 == m1) {
-            // cout << "Size of minimum cut with " << u << " added to terminal group 0 is still " << m1 << ". Recursing with " << u << " added to terminal group 0." << endl;
             return nmc(merged_state, k);
         }
 
@@ -271,7 +252,6 @@ optional<vector<NodeId>> Exact::nmc(const State &state, int k)
             }
             else {
                 // 6.3 else return NMC(G, {T ′1, T 2, . . . , T l }, k) .
-                // cout << "Size of minimum cut with " << u << " added to terminal group 0 is greater than " << m1 << ". Recursing with " << u << " added to terminal group 0." << endl;
                 return nmc(merged_state, k);
             }
         }
@@ -303,7 +283,6 @@ optional<vector<NodeId>> Exact::run(int k_approx, int M, int time_limit_ms)
     int k = min(k_approx, M); // Ensure K doesn't exceed M
 
     while (k >= 0 && !time_limit_reached()) {
-        // cout << "Running NMC with k = " << k << endl;
         auto result = nmc(initial_state, k);
 
         if (timed_out) {
@@ -325,24 +304,3 @@ optional<vector<NodeId>> Exact::run(int k_approx, int M, int time_limit_ms)
 
     return best_cut;
 }
-
-// Algorithm NMC(G, {T1, T 2, . . . , T l }, k)
-// input: an instance (G, {T1, T 2, . . . , T l }, k)  of the PARAMETERIZED NODE
-// MULTIWAY CUT problem (l ≥ 2)
-// output: a separator of size bounded by k for (G, {T1, T 2, . . . , T l }, k) ,
-// or report “No” (i.e., no such a separator)
-// 1. if an edge has its two ends in two different terminal sets
-// then return “No”;
-// 2. if a non-terminal w has two neighbors in two different terminal sets
-// then return w + NMC(G − w, {T1 , . . . , T l }, k − 1); ‡
-// 3. find the size m1 of a minimum V-cut between T1 and ⋃lj =2 Tj ;
-// 4. if m1 > k then return “No”;
-// 5. if (m1 = 0 and l = 2) then return ∅;
-// 5.1 if (m1 = 0 and l > 2) then return NMC(G, {T2, . . . , T l }, k) ;
-// 6. else pick a non-terminal u that has a neighbor in T1; let T ′1 = T1 + u;
-// 6.1 if the size of a minimum V-cut between T ′1 and ⋃lj =2 Tj is equal to m1
-// then return NMC(G, {T ′1, T 2, . . . , T l }, k) ;
-// 6.2 else S = u + NMC(G − u, {T1, T 2, . . . , T l }, k − 1);
-// if S is not “No” then return S;
-// 6.3 else return NMC(G, {T ′1, T 2, . . . , T l }, k) .
-// ‡To simplify the expression, we suppose that “No” plus any vertex set gives a “No”.

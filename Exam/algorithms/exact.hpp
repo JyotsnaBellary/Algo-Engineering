@@ -9,7 +9,6 @@ using Clock = chrono::steady_clock;
 struct State {
     std::vector<bool> deleted;
     std::vector<bool> locked;
-    // std::vector<int> group_of;                 // -1 if not in a terminal group
     std::vector<std::vector<NodeId>> groups;
 };
 
