@@ -271,11 +271,9 @@ optional<vector<NodeId>> Exact::run(int k_approx, int M, int time_limit_ms)
     State initial_state;
     initial_state.deleted = vector<bool>(graph.number_of_nodes(), false);
     initial_state.locked = vector<bool>(graph.number_of_nodes(), false);
-    // initial_state.group_of = vector<int>(graph.number_of_nodes(), -1);
 
     for (size_t i = 0; i < terminals.size(); ++i)
     {
-        // initial_state.group_of[terminals[i]] = i;
         initial_state.groups.push_back({terminals[i]});
         initial_state.locked[terminals[i]] = true;
     }
