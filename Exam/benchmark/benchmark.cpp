@@ -251,11 +251,11 @@ bool Benchmark::test_validity(const Graph& graph,
                 }
                 reverse(path.begin(), path.end());
 
-                cout << "Path: ";
-                for (NodeId v : path) {
-                    cout << v << " ";
-                }
-                cout << "\n";
+                // cout << "Path: ";
+                // for (NodeId v : path) {
+                //     cout << v << " ";
+                // }
+                // cout << "\n";
 
                 return false;
             }
