@@ -1,8 +1,8 @@
 # Algorithm Engineering Exam
-## Student Id: 
+## Student Id: 1472532
 ## Minimum Node Multiway Cut Problem 
 In this project we compare and analyze the following approaches to solve the Node Multiway Cut Problem
-- A greedy heuristic algorithm
+- A greedy heuristic algorithm (Isolation Cut Heuristuc)
 - A parallelised heuristic algorithm 
 - A (2 - 2/k) approximation approach
 - An improved parameterized exact algorithm

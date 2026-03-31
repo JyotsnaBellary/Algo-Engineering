@@ -34,7 +34,7 @@ void ParallelHeuristic::initialize_sink()
     graph.set_node(sink_node);
 
     terminalToSinkEdges.resize(terminals.size());
-    std::fill(terminalToSinkEdges.begin(), terminalToSinkEdges.end(), INVALID_EDGE);
+    fill(terminalToSinkEdges.begin(), terminalToSinkEdges.end(), INVALID_EDGE);
 
     const int INF = numeric_limits<int>::max() / 4;
 
@@ -55,11 +55,13 @@ void ParallelHeuristic::initialize_sink()
     }
 }
 
+// Parallely transform the edge cut to node cuts
 optional<vector<NodeId>> ParallelHeuristic::merge_node_cut_parallel(const vector<vector<EdgeId>> &isolatingCuts, const vector<pair<int, int>> &cutSizes)
 {
 
     vector<vector<NodeId>> localCuts(cutSizes.size() - 1);
 
+    // for each cut except the largest one, transform it to a node cut in parallel
     #pragma omp parallel for schedule(static)
     for (int j = 0; j < (int)cutSizes.size() - 1; j++)
     {
@@ -107,10 +109,11 @@ optional<vector<NodeId>> ParallelHeuristic::merge_node_cut_parallel(const vector
     return vector<NodeId>(finalCut.begin(), finalCut.end());
 }
 
+// Come pute the edge isolating cuts using edmonds karp 
 vector<EdgeId> ParallelHeuristic::compute_isolating_cut(NodeId terminal, EdgeId blocked_sink_edge)
 {
     // call max flow algorithm
-    MaxFlowResult result = MaxFlow::edmondsKarp(graph, terminal, sink, std::nullopt,
+    MaxFlowResult result = MaxFlow::edmondsKarp(graph, terminal, sink, nullopt,
         blocked_sink_edge);
 
     vector<EdgeId> cut = MaxFlow::getMinCutEdges(
@@ -135,6 +138,7 @@ vector<EdgeId> ParallelHeuristic::compute_isolating_cut(NodeId terminal, EdgeId 
     return filteredCut;
 }
 
+// run the parallelised heuristic algorithm
 optional<vector<NodeId>> ParallelHeuristic::run(int time_limit_ms)
 {
     for (const Edge &edge : graph.get_edges())
@@ -158,12 +162,12 @@ optional<vector<NodeId>> ParallelHeuristic::run(int time_limit_ms)
     initialize_sink();
 
     isolatingCuts.assign(terminals.size(), {});
-    std::vector<std::pair<int, int>> cutSizes(terminals.size());
+    vector<pair<int, int>> cutSizes(terminals.size());
 
     #pragma omp parallel for schedule(dynamic)
         for (int i = 0; i < (int)terminals.size(); i++)
         {
-            // prin he thread it is running here
+            // print the thread it is running here
             if (stop) {
                 continue;
             }
@@ -181,7 +185,7 @@ optional<vector<NodeId>> ParallelHeuristic::run(int time_limit_ms)
         continue;
     }
 
-            isolatingCuts[i] = std::move(cut);
+            isolatingCuts[i] = move(cut);
             cutSizes[i] = { (int)isolatingCuts[i].size(), i };
         }
 

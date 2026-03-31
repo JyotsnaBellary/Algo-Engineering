@@ -32,7 +32,7 @@ void Heuristic::initialize_sink()
     graph.set_node(sink_node);
 
     terminalToSinkEdges.resize(terminals.size());
-    std::fill(terminalToSinkEdges.begin(), terminalToSinkEdges.end(), INVALID_EDGE);
+    fill(terminalToSinkEdges.begin(), terminalToSinkEdges.end(), INVALID_EDGE);
 
     const int INF = numeric_limits<int>::max() / 4;
 
@@ -81,8 +81,7 @@ vector<NodeId> Heuristic::merge_into_node_cut(const vector<vector<EdgeId>> &cuts
             NodeId u = edge.src;
             NodeId v = edge.trg;
 
-            // print if one of them is terminal or not and their degree
-
+            // if one of them is terminal or not and their degree
             if (graph.get_node(u).terminal && !graph.get_node(v).terminal)
             {
                 finalCut.insert(v);
@@ -161,7 +160,7 @@ optional<vector<NodeId>> Heuristic::run(int time_limit_ms)
 
     isolatingCuts.clear();
 
-    std::vector<std::pair<int, int>> cutSizes; // {cut_size, terminal_index}
+    vector<pair<int, int>> cutSizes; // {cut_size, terminal_index}
 
     // for  each terminal
     for (int i = 0; i < terminals.size(); i++)

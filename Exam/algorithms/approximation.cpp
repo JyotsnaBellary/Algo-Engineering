@@ -6,7 +6,9 @@
 #include <limits>
 #include <glpk.h>
 #include <iostream>
+
 using namespace std;
+
 Approximation::Approximation(Graph graph, const vector<NodeId> &terminals)
     : graph(graph), terminals(terminals),
       in_region(terminals.size(), vector<bool>(graph.number_of_nodes(), false)),
@@ -15,23 +17,23 @@ Approximation::Approximation(Graph graph, const vector<NodeId> &terminals)
 {
 }
 
+//Solves dual LP and Returns optimal soluiton
 optional<DualLPSolution> Approximation::calculate_optimal_solution(DualLPSolution &sol, int time_limit_ms)
 {
-    int num_nodes = graph.number_of_nodes();
-    long long m = graph.number_of_edges();
+    // Build the polynomial-size dual LP and extract the node lengths d and
+    // terminal-to-node distances y from the primal solution returned by GLPK.
+    long long num_edges = graph.number_of_edges();
     int num_terminals = terminals.size();
+    int num_nodes = graph.number_of_nodes();
 
-    int n = graph.number_of_nodes();
-    int k = terminals.size();
-
-    vector<int> d_col(n, -1);
-    vector<vector<int>> y_col(n, vector<int>(k, -1));
+    vector<int> d_col(num_nodes, -1);
+    vector<vector<int>> y_col(num_nodes, vector<int>(num_terminals, -1));
     glp_prob *lp = glp_create_prob();
     glp_set_obj_dir(lp, GLP_MIN);
 
     int col = 0;
-    // d_v variables
-    for (NodeId v = 0; v < n; v++)
+    // One d_v variable for each non-terminal node.
+    for (NodeId v = 0; v < num_nodes; v++)
     {
         if (graph.get_node(v).terminal)
             continue;
@@ -45,10 +47,11 @@ optional<DualLPSolution> Approximation::calculate_optimal_solution(DualLPSolutio
         glp_set_obj_coef(lp, col, graph.get_node(v).weight);
     }
 
-    // y[u][j] variables
-    for (NodeId u = 0; u < n; u++)
+    // One y[u][j] variable for each node/terminal pair. These represent the
+    // distance from terminal s_j to node u in the dual reformulation.
+    for (NodeId u = 0; u < num_nodes; u++)
     {
-        for (int j = 0; j < k; j++)
+        for (int j = 0; j < num_terminals; j++)
         {
             col++;
             glp_add_cols(lp, 1);
@@ -60,11 +63,11 @@ optional<DualLPSolution> Approximation::calculate_optimal_solution(DualLPSolutio
         }
     }
 
-    long long row_count_ll = m * k + k + 1LL * k * (k - 1);
-    long long col_count_ll = (n - (long long)terminals.size()) + 1LL * n * k;
+    long long row_count_ll = num_edges * num_terminals + num_terminals + 1LL * num_terminals * (num_terminals - 1);
+    long long col_count_ll = (num_nodes - (long long)terminals.size()) + 1LL * num_nodes * num_terminals;
 
-    // rough estimate: each edge/terminal row contributes about 2-3 coefficients
-    long long nnz_est_ll = 3LL * m * k + k + 1LL * k * (k - 1);
+    // Skip instances whose LP would become too large for the configured setup.
+    long long nnz_est_ll = 3LL * num_edges * num_terminals + num_terminals + 1LL * num_terminals * (num_terminals - 1);
 
     if (row_count_ll > 10000000LL || col_count_ll > 5000000LL || nnz_est_ll > 30000000LL)
     {
@@ -72,6 +75,7 @@ optional<DualLPSolution> Approximation::calculate_optimal_solution(DualLPSolutio
         return nullopt;
     }
 
+    // Store the LP matrix as sparse (row, column, value) triplets for GLPK.
     int row_count = static_cast<int>(row_count_ll);
     glp_add_rows(lp, row_count);
 
@@ -87,6 +91,8 @@ optional<DualLPSolution> Approximation::calculate_optimal_solution(DualLPSolutio
 
     int row = 0;
 
+    // For each directed edge (u,v) and each terminal j, enforce
+    // y[v][j] - y[u][j] <= d[v].
     for (const Edge &e : graph.get_edges())
     {
         if (!e.active)
@@ -95,7 +101,7 @@ optional<DualLPSolution> Approximation::calculate_optimal_solution(DualLPSolutio
         NodeId u = e.src;
         NodeId v = e.trg;
 
-        for (int j = 0; j < k; j++)
+        for (int j = 0; j < num_terminals; j++)
         {
             row++;
             glp_set_row_bnds(lp, row, GLP_UP, 0.0, 0.0);
@@ -110,7 +116,8 @@ optional<DualLPSolution> Approximation::calculate_optimal_solution(DualLPSolutio
         }
     }
 
-    for (int j = 0; j < k; j++)
+    // Fix each terminal to distance 0 from itself.
+    for (int j = 0; j < num_terminals; j++)
     {
         row++;
         NodeId sj = terminals[j];
@@ -119,9 +126,10 @@ optional<DualLPSolution> Approximation::calculate_optimal_solution(DualLPSolutio
         add(row, y_col[sj][j], 1.0);
     }
 
-    for (int i = 0; i < k; i++)
+    // Enforce distance at least 1 between distinct terminals.
+    for (int i = 0; i < num_terminals; i++)
     {
-        for (int j = 0; j < k; j++)
+        for (int j = 0; j < num_terminals; j++)
         {
             if (i == j)
                 continue;
@@ -147,24 +155,27 @@ optional<DualLPSolution> Approximation::calculate_optimal_solution(DualLPSolutio
         return nullopt; // return empty solution
     }
     // DualLPSolution sol;
-    sol.d.assign(n, 0.0);
-    sol.y.assign(n, vector<double>(k, 0.0));
+    sol.d.assign(num_nodes, 0.0);
+    sol.y.assign(num_nodes, vector<double>(num_terminals, 0.0));
 
     sol.objective_value = glp_get_obj_val(lp);
 
-    // d values
-    for (NodeId v = 0; v < n; v++)
+    // Read back the dual node lengths d_v.
+    for (NodeId v = 0; v < num_nodes; v++)
     {
         if (!graph.get_node(v).terminal)
         {
             sol.d[v] = glp_get_col_prim(lp, d_col[v]);
+
+            // cout << "d[" << v << "] = " << sol.d[v] << "\n";
         }
     }
 
     const double EPS = 1e-6;
-    for (NodeId u = 0; u < n; u++)
+    // Nodes at distance 0 from terminal j belong to the region of j.
+    for (NodeId u = 0; u < num_nodes; u++)
     {
-        for (int j = 0; j < k; j++)
+        for (int j = 0; j < num_terminals; j++)
         {
             sol.y[u][j] = glp_get_col_prim(lp, y_col[u][j]);
 
@@ -173,6 +184,8 @@ optional<DualLPSolution> Approximation::calculate_optimal_solution(DualLPSolutio
                 in_region[j][u] = true;
                 region_nodes[j].push_back(u);
                 node_state[u] = IN_REGION;
+
+                // cout << "y[" << u << "][" << j << "] = " << sol.y[u][j] << " (in region of terminal " << terminals[j] << ")\n";
             }
         }
     }
@@ -183,6 +196,8 @@ optional<DualLPSolution> Approximation::calculate_optimal_solution(DualLPSolutio
 
 optional<vector<NodeId>> Approximation::run(int time_limit_ms)
 {
+    // If two terminals are adjacent, no valid node multiway cut exists because
+    // terminals themselves are not allowed to be removed.
     for (const Edge &edge : graph.get_edges())
     {
         if (!edge.active)
@@ -202,7 +217,7 @@ optional<vector<NodeId>> Approximation::run(int time_limit_ms)
     int num_terminals = terminals.size();
     int num_nodes = graph.number_of_nodes();
 
-    // compute LP solution and get the optimal value
+    // Solve the LP and obtain the region structure induced by the dual solution.
     DualLPSolution solution;
     optional<DualLPSolution> lp_solution = calculate_optimal_solution(solution, time_limit_ms);
 
@@ -213,13 +228,16 @@ optional<vector<NodeId>> Approximation::run(int time_limit_ms)
         return nullopt;
     }
 
+    // initialize boundary tracking structures
     in_boundary.assign(num_terminals, vector<bool>(num_nodes, false));
     boundary_count.assign(num_nodes, 0);
     first_owner.assign(num_nodes, -1);
     half_boundary_weight.assign(num_terminals, 0);
     in_M.assign(num_nodes, false);
 
-    // for each terminal, mark unique and non unique boundry
+    // For each terminal region, inspect outgoing neighbors and classify them as
+    // boundary nodes. track whether a boundary node belongs to exactly one
+    // region or is shared by multiple regions.
     for (int t = 0; t < num_terminals; t++)
     {
         NodeId terminal = terminals[t];
@@ -239,6 +257,7 @@ optional<vector<NodeId>> Approximation::run(int time_limit_ms)
                     continue;
                 else if (lp_solution.has_value() && lp_solution.value().d[neighbor] == 0.5 || node_state[neighbor] == OUTSIDE)
                 {
+                    // belongs to a unique boundary
                     node_state[neighbor] = UNIQUE_BOUNDARY;
                     in_boundary[t][neighbor] = true;
                     in_M[neighbor] = true;
@@ -248,8 +267,9 @@ optional<vector<NodeId>> Approximation::run(int time_limit_ms)
 
                     half_boundary_weight[t] += graph.get_node(neighbor).weight;
                 }
-                else if (lp_solution.has_value() && lp_solution.value().d[neighbor] == 1.0 && node_state[neighbor] == UNIQUE_BOUNDARY && first_owner[neighbor] != t)
+                else if (lp_solution.has_value() && lp_solution.value().d[neighbor] == 1.0 || node_state[neighbor] == UNIQUE_BOUNDARY && first_owner[neighbor] != t)
                 {
+                    // Belongs to multiple boundaries, so update state and adjust half boundary weight if it was previously counted as unique.
                     node_state[neighbor] = MULTI_BOUNDARY;
                     int owner = first_owner[neighbor];
                     half_boundary_weight[owner] -= graph.get_node(neighbor).weight;
@@ -263,6 +283,8 @@ optional<vector<NodeId>> Approximation::run(int time_limit_ms)
     int heaviest_half_boundary = -1;
     int max_half_boundary_weight = -1;
 
+    // The approximation removes all boundary nodes except the heaviest unique
+    // half-boundary.
     for (int i = 0; i < num_terminals; i++)
     {
         if (half_boundary_weight[i] > max_half_boundary_weight)
@@ -272,7 +294,8 @@ optional<vector<NodeId>> Approximation::run(int time_limit_ms)
         }
     }
 
-    // compute  Output ⋃ Γ(Si) − Γ1/2(Sj)
+    // Construct the final node cut: union of all boundary nodes minus the
+    // unique boundary of the chosen terminal.
     set<NodeId> cutSet;
     for (NodeId v = 0; v < num_nodes; v++)
     {
