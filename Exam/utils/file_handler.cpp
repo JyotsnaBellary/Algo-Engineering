@@ -58,12 +58,12 @@ Graph FileHandler::readGraph(const string& filePath) {
     return graph;
 }
 
-Graph FileHandler::readSparseGraph(const std::string& filePath) {
-    std::ifstream file(filePath);
+Graph FileHandler::readSparseGraph(const string& filePath) {
+    ifstream file(filePath);
 
     if (!file) {
-        std::cerr << "Error opening file: " << filePath << std::endl;
-        std::exit(1);
+        cerr << "Error opening file: " << filePath << endl;
+        exit(1);
     }
 
     int number_of_nodes, number_of_edges;
@@ -71,8 +71,8 @@ Graph FileHandler::readSparseGraph(const std::string& filePath) {
 
     Graph graph;
 
-    std::cout << "Nodes: " << number_of_nodes
-              << ", Edges: " << number_of_edges << std::endl;
+    cout << "Nodes: " << number_of_nodes
+              << ", Edges: " << number_of_edges << endl;
 
     // Read node lines: node_id latitude longitude
     for (int i = 0; i < number_of_nodes; i++) {
@@ -90,7 +90,7 @@ Graph FileHandler::readSparseGraph(const std::string& filePath) {
         graph.set_node(node);
     }
 
-    std::cout << "Setting up edges now..." << std::endl;
+    cout << "Setting up edges now..." << endl;
 
     // Read undirected edges and add both directions
     for (int i = 0; i < number_of_edges; i++) {
@@ -116,26 +116,26 @@ Graph FileHandler::readSparseGraph(const std::string& filePath) {
     return graph;
 }
 
-GraphInstance FileHandler::readPaceGraph(const std::string& filePath) {
-    std::ifstream file(filePath);
+GraphInstance FileHandler::readPaceGraph(const string& filePath) {
+    ifstream file(filePath);
 
     if (!file) {
-        std::cerr << "Error opening file: " << filePath << std::endl;
-        std::exit(1);
+        cerr << "Error opening file: " << filePath << endl;
+        exit(1);
     }
 
     GraphInstance graphInstance;
     Graph& graph = graphInstance.graph;
-    std::string token;
+    string token;
     int number_of_nodes = 0;
 
     while (file >> token) {
         if (token == "SECTION") {
-            std::string section_name;
+            string section_name;
             file >> section_name;
 
             if (section_name == "Graph") {
-                std::string label;
+                string label;
                 file >> label >> number_of_nodes;   // Nodes <n>
                 file >> label;                      // Edges
                 int number_of_edges;
@@ -151,7 +151,7 @@ GraphInstance FileHandler::readPaceGraph(const std::string& filePath) {
                 }
 
                 for (int i = 0; i < number_of_edges; ++i) {
-                    std::string edge_tag;
+                    string edge_tag;
                     int u, v, w;
                     file >> edge_tag >> u >> v >> w;   // E u v w
 
@@ -176,12 +176,12 @@ GraphInstance FileHandler::readPaceGraph(const std::string& filePath) {
                 file >> token; // END
             }
             else if (section_name == "Terminals") {
-                std::string label;
+                string label;
                 int terminal_count;
                 file >> label >> terminal_count;   // Terminals <k>
 
                 for (int i = 0; i < terminal_count; ++i) {
-                    std::string terminal_tag;
+                    string terminal_tag;
                     int t;
                     file >> terminal_tag >> t;     // T <node>
                     graphInstance.terminals.push_back(t - 1);

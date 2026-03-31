@@ -18,6 +18,7 @@ add_executable(multiwaycut
     algorithms/approximation.cpp
     algorithms/exact.cpp
     benchmark/benchmark.cpp
+    benchmark/grid_generator.cpp
     main.cpp
 )
 

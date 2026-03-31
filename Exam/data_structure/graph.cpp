@@ -1,4 +1,7 @@
 #include "graph.hpp"
+#include <string>
+
+using namespace std;
 
 Graph::Graph()
         : nodes(),
@@ -114,6 +117,7 @@ const vector<NodeId>& Graph::get_neighboring_nodes(NodeId id) const {
     return neighboring_nodes[id];
 }
 
+// Print for Debugging
 void Graph::print_graph() const {
     cout << "Graph:\n";
     cout << "Number of nodes: " << nodes.size() << "\n";

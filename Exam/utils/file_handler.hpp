@@ -5,7 +5,7 @@
 
 struct GraphInstance {
     Graph graph;
-    std::vector<NodeId> terminals;
+    vector<NodeId> terminals;
 };
 
 class FileHandler {
