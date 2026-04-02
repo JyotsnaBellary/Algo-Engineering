@@ -1,6 +1,7 @@
 # Algorithm Engineering Exam
 ## Student Id: 1472532
 ## Minimum Node Multiway Cut Problem 
+
 In this project we compare and analyze the following approaches to solve the Node Multiway Cut Problem
 - A greedy heuristic algorithm (Isolation Cut Heuristuc)
 - A parallelised heuristic algorithm 
@@ -38,3 +39,4 @@ Run the CLI binary:
 ```bash
 build/multiwaycut
 ```
+![Minimum Node Multiway Cut overview](drawing.jpeg)
