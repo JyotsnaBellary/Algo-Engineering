@@ -1,4 +1,6 @@
 # Algorithm Engineering Exam
+Student Name: Jyotsna Bellary
+Student Id: 01/1472532
 ## Minimum Node Multiway Cut Problem 
 
 The Multiway Cut Problem(MCP) is a graph partitioning and combinatorial optimization problem in computer science. Given a graph and a set of terminal nodes, a Node Multiway cut is a set of minimum vertices that leaves terminals disconnected from each other when removed from the graph.
